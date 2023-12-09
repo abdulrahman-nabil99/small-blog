@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div id="top-nav">
+          <a href="#" id="logo">Logo</a>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li id="loginDisplay" style="display: initial">Login</li>
+            <li id="logOut" style="display: none">Logout</li>
+          </ul>
+        </div>
+        <div id="loginForm" style="display: none">
+          <label for="userName">User Name :</label>
+          <input type="text" id="userNme" /> <br />
+          <label for="userName">Passworde :</label>
+          <input type="password" id="userPassword" /> <br />
+          <button id="signIn">Sign In</button>
+        </div>
+      </div>
+    </nav>
+    <section id="newPost" style="display: none">
+      <div class="container">
+        <div id="newPostTitle">
+          <label for="titleInput"><h3>Title:</h3></label>
+          <input type="text" id="titleInput" />
+        </div>
+        <div id="postBox">
+          <div id="newPostITems">
+            <ul>
+              <li id="addImg">img</li>
+              <li id="addLink">link</li>
+              <li id="addLine">Line</li>
+            </ul>
+          </div>
+          <div id="newPostContent">
+            <label for="postTextArea"><h3>Blog:</h3></label>
+            <textarea name="" id="postTextArea" cols="30" rows="10"></textarea>
+          </div>
+          <div class="postBtns">
+            <button id="resetBtn">Reset</button>
+            <button id="postBtn">Post</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="allPosts">
+      <div class="container posts-container"></div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <ul>
+          <li>Links</li>
+          <li>Social</li>
+          <li>Subscribe</li>
+        </ul>
+        <p>All rights Reserved 2023</p>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

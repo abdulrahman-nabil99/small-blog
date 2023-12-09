@@ -1,0 +1,210 @@
+nav {
+  background-color: darkslategray;
+  color: aliceblue;
+}
+.container {
+  position: relative;
+}
+#loginForm {
+  position: absolute;
+  background-color: black;
+  max-width: 300px;
+  padding: 10px;
+  z-index: 2;
+  right: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#loginForm > label {
+  min-width: 90px;
+}
+
+#loginForm > button {
+  border: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#logo {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+nav ul > li {
+  padding: 15px 10px;
+  margin-left: -4px;
+  cursor: pointer;
+  border-bottom: 3px solid darkslategray;
+}
+
+nav ul > li:hover {
+  border-bottom: 3px solid white;
+}
+
+#newPost,
+#allPosts {
+  background-color: bisque;
+}
+#newPost {
+  padding: 70px 0;
+}
+
+#newPostTitle {
+  display: flex;
+  padding: 10px 100px;
+}
+
+#newPostTitle label > h3 {
+  margin-right: 10px;
+}
+
+#newPostTitle > input {
+  width: 100%;
+  border: 1px solid;
+}
+
+#newPostTitle > input:focus {
+  outline: 0;
+}
+
+#postBox {
+  background-color: rgb(207, 200, 200);
+  padding: 20px 5px;
+  margin: 10px 100px;
+  border-radius: 5px;
+}
+
+#newPostITems > ul {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+#newPostITems > ul > li {
+  margin-right: 10px;
+  background-color: blueviolet;
+  padding: 5px 15px;
+  color: antiquewhite;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#newPostContent {
+  display: flex;
+  padding: 10px 0;
+}
+
+#newPostContent label > h3 {
+  margin-right: 10px;
+}
+
+#newPostContent > textarea {
+  width: 100%;
+  border: 1px solid;
+  resize: none;
+}
+
+#newPostContent > textarea:focus {
+  outline: 0;
+}
+
+.posts-container > article {
+  background-color: chocolate;
+  margin: 0 100px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+article img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.delet-btn {
+  background-color: brown;
+  color: aliceblue;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#allPosts {
+  padding: 50px 0;
+}
+footer {
+  background-color: darkslategray;
+  color: aliceblue;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-evenly;
+}
+.postBtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#postBtn {
+  background-color: rgb(65, 194, 93);
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#resetBtn {
+  background-color: rgb(194, 65, 82);
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-right: 25px;
+}
+
+@media (max-width: 992px) {
+  #newPostTitle {
+    padding: 10px 10px;
+  }
+  #postBox {
+    margin: 10px 10px;
+  }
+  .posts-container > article {
+    margin: 0 10px 20px;
+  }
+}
+
+@media (max-width: 557px) {
+  #top-nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
