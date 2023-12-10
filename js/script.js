@@ -141,7 +141,8 @@ let check = function (current) {
 };
 
 // check user Details and login
-loginBtn.addEventListener("click", () => {
+loginBtn.addEventListener("click", (e) => {
+  e.preventDefault()
   if (
     userInput.value === adminDetails.userName &&
     passwordInput.value === adminDetails.password
