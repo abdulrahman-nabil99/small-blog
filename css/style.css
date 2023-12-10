@@ -12,14 +12,17 @@ nav {
   padding: 10px;
   z-index: 2;
   right: 0;
+}
+#loginForm > form {
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-#loginForm > label {
+#loginForm > form > label {
   min-width: 90px;
 }
 
-#loginForm > button {
+#loginForm > form > button {
   border: 0;
   border-radius: 5px;
   margin-top: 5px;
